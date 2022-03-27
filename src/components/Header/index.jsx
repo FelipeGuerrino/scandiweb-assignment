@@ -1,5 +1,7 @@
 import React from "react";
-import Currency from "./Currency";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.svg";
+import Currency from "../Currency";
 import MiniCart from "./MiniCart";
 import Nav from "./Nav";
 
@@ -8,7 +10,9 @@ class Header extends React.Component {
     return (
       <>
         <Nav />
-        {/* {icon} */}
+        <Link to="/">
+          <img src={logo} alt="" />
+        </Link>
         <Currency />
         <MiniCart />
       </>
