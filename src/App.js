@@ -9,8 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-      {client.setEndpoint("http://localhost:4000")}
-      
+      {client.setEndpoint('http://localhost:4000/')}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Category />}></Route>
